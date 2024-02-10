@@ -1,9 +1,9 @@
 <p align="right">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="100" alt="Nest Logo" /></a>
 </p>
+
+
 ![alt text](image-9.png)
-
-
 # Ejecutar en desarrollo
 
 1. clonar el repositorio.
@@ -88,6 +88,10 @@
     ![alt text](image-6.png)
 
 
+    ## Codifo Front 
+    ```
+    https://github.com/alberto8812/Insive-Mensaje-Oculto-front.git
+    ```
     ## Visualizar en el front end
 
     ![alt text](image-10.png)
