@@ -14,7 +14,7 @@ export class DecryptedMessageController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.decryptedMessageService.findMessage(+id);
+    return this.decryptedMessageService.findMessage(id);
   }
 
 
