@@ -90,4 +90,4 @@
 
     ## Visualizar en el front end
 
-    ![alt text](image-7.png)
+    ![alt text](image-10.png)
