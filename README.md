@@ -1,6 +1,7 @@
 <p align="right">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="100" alt="Nest Logo" /></a>
 </p>
+![alt text](image-9.png)
 
 
 # Ejecutar en desarrollo
@@ -85,3 +86,8 @@
     3. Usa ``transformMessge`` para comprobar si el mensaje descifrado es válido (solo contiene caracteres permitidos).
 
     ![alt text](image-6.png)
+
+
+    ## Visualizar en el front end
+
+    ![alt text](image-7.png)
