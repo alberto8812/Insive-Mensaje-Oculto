@@ -13,7 +13,7 @@ export const findkeyMessage = (encryptedMessage: number[]) => {
           let messages = encryptedMessagAndkeyRelation(keys, encryptedMessage);
 
           if (transformMessge(messages)) {
-            console.log('entre');
+  
             return {
               keys,
               messages,

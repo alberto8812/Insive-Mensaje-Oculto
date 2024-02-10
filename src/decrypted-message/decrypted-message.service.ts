@@ -30,7 +30,7 @@ export class DecryptedMessageService {
     let stringKey=this.key.map(number => String.fromCharCode(number)).join('')
 
 
-    return `the key ${stringKey}  `
+    return {stringKey}
   }
   findMessage(id: string) {
     let stringKey=this.key.map(number => String.fromCharCode(number)).join('')
@@ -39,7 +39,7 @@ export class DecryptedMessageService {
 
       let stringmessage=this.message.map(number => String.fromCharCode(number)).join('')
 
-      return stringmessage;
+      return {stringmessage};
     }
     return `incorrect key ${id}`
   }
