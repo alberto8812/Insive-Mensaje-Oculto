@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { findkeyMessage } from './helpers/idex';
 
-
 @Injectable()
 export class DecryptedMessageService {
   private key: number[] = [];
@@ -23,26 +22,28 @@ export class DecryptedMessageService {
   ];
 
   findKey() {
-    const {keys,messages}=findkeyMessage(this.encryptedMessage)
-    this.key=keys;
-    this.message=messages;
+    const { keys, messages } = findkeyMessage(this.encryptedMessage);
+    this.key = keys;
+    this.message = messages;
 
-    let stringKey=this.key.map(number => String.fromCharCode(number)).join('')
+    let stringKey = this.key
+      .map((number) => String.fromCharCode(number))
+      .join('');
 
-
-    return {stringKey}
+    return { stringKey };
   }
   findMessage(id: string) {
-    let stringKey=this.key.map(number => String.fromCharCode(number)).join('')
+    let stringKey = this.key
+      .map((number) => String.fromCharCode(number))
+      .join('');
 
-    if(id===stringKey){
+    if (id === stringKey) {
+      let stringmessage = this.message
+        .map((number) => String.fromCharCode(number))
+        .join('');
 
-      let stringmessage=this.message.map(number => String.fromCharCode(number)).join('')
-
-      return {stringmessage};
+      return { stringmessage };
     }
-    return `incorrect key ${id}`
+    return `incorrect key ${id}`;
   }
 }
-
-
