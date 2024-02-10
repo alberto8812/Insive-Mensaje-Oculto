@@ -3,7 +3,7 @@
 </p>
 
 
-![alt text](image-9.png)
+![alt text](image-11.png)
 # Ejecutar en desarrollo
 
 1. clonar el repositorio.
